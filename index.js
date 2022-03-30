@@ -14,7 +14,7 @@ const BriefText = () => {
     return sentence();
 }
 const LongText = () => {
-	return [...Array(Math.floor(Math.random()*(5-3)+3))].map(paragraph);
+	return [...Array(Math.floor(Math.random()*(5-3)+3))].map(paragraph).join('\n');
 }
 const genRand = (template) => {
     let ret = {};
