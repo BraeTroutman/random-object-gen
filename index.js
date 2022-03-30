@@ -1,13 +1,9 @@
-const {lnames, fnames} = require('./lib/names');
+const {lname, fname} = require('./lib/names');
 const {pics} = require('./lib/pics');
 const { sentence, paragraph } = require('./lib/text');
 
-const FirstName = () => {
-    return fnames[Math.floor(Math.random()*fnames.length)];
-}
-const LastName = () => {
-    return lnames[Math.floor(Math.random()*lnames.length)];
-}
+const FirstName = fname;
+const LastName = lname;
 const ProfilePic = () => {
     return pics[Math.floor(Math.random()*pics.length)];
 }
