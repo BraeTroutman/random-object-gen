@@ -1,6 +1,6 @@
 {
   "name": "random-object-gen",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "utility functions to reify random js objects from a single template object",
   "main": "index.js",
   "scripts": {
