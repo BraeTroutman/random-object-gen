@@ -1,6 +1,6 @@
 const {lnames, fnames} = require('./lib/names');
 const {pics} = require('./lib/pics');
-const lipsum = require('./lib/lipsum');
+const { sentence, paragraph } = require('./lib/text');
 
 const FirstName = () => {
     return fnames[Math.floor(Math.random()*fnames.length)];
@@ -12,13 +12,13 @@ const ProfilePic = () => {
     return pics[Math.floor(Math.random()*pics.length)];
 }
 const Description = () => {
-    return "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut rhoncus purus. Mauris luctus, lorem sit amet placerat facilisis, nibh neque tempus eros, at tincidunt justo tortor eget leo. Quisque fringilla convallis faucibus. Nam vitae mattis elit, imperdiet bibendum nisl. Aliquam lacinia feugiat bibendum. Aliquam volutpat ornare tellus at euismod.";
+    return paragraph();
 }
 const BriefText = () => {
-    return "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+    return sentence();
 }
 const LongText = () => {
-	return lipsum;
+	return [...Array(Math.floor(Math.random()*(5-3)+3))].map(paragraph);
 }
 const genRand = (template) => {
     let ret = {};
