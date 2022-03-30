@@ -1,4 +1,4 @@
-const {lname, fname} = require('./lib/names2');
+const {lname, fname} = require('./lib/names');
 const {pics} = require('./lib/pics');
 const { sentence, paragraph } = require('./lib/text');
 
